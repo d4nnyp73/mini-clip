@@ -1,12 +1,14 @@
 # Mini-CLIP – Abgabe (KDDL, SoSe 2026)
 
-Die beiliegende PDF ist die Projektdokumentation. Im Ordner `Projekt/` kann das Jupyter-Notebook
-`Mini_CLIP_Exploration.ipynb` direkt gestartet und komplett ausgeführt werden
-(einmalig `pip install -r requirements.txt`; läuft in ca. 3 Minuten vollständig auf der CPU,
-alle Daten und Checkpoints liegen bei).
+**Quellcode:** https://github.com/d4nnyp73/mini-clip
 
-Aus Platzgründen (Upload-Limit) sind zwei Dinge ausgelassen, die das Notebook **nicht** benötigt –
-sie sind nur für den optionalen vollen Trainings-/Baseline-Lauf (`RUN_HEAVY = True`) relevant:
+Die beiliegende PDF (`Dokumentation_ KDDL___mini_CLIP.pdf`) ist die Projektdokumentation.
+Im Ordner `Projekt/` kann das Jupyter-Notebook `Mini_CLIP_Exploration.ipynb` direkt gestartet
+und komplett ausgeführt werden (einmalig `pip install -r requirements.txt`; läuft in ca.
+3 Minuten vollständig auf der CPU, alle benötigten Daten und Checkpoints liegen bei).
+
+Aus Platzgründen sind zwei Dinge nicht im Repository enthalten – beide werden nur für den
+optionalen vollen Trainings-/Baseline-Lauf (`RUN_HEAVY = True`) benötigt, nicht vom Notebook:
 
 1. `Projekt/clip_onnx/` – vortrainierte ONNX-Encoder (150 MB) für `baseline_flickr_onnx.py`.
    Wiederherstellbar von HuggingFace, Repo `Xenova/clip-vit-base-patch32`
