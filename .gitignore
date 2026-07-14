@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+Projekt/clip_onnx/
+Projekt/data/flickr8k_cache/*train*
+Projekt/data/flickr8k_cache/*val*

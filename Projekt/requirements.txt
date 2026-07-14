@@ -1,0 +1,19 @@
+# Mini-CLIP from scratch -- CPU-tauglich
+# Kern (zwingend):
+torch>=2.0          # auf CPU: pip install torch --index-url https://download.pytorch.org/whl/cpu
+numpy>=1.23
+Pillow>=9.0
+tqdm>=4.60
+
+# Fuer den echten Flickr8k-Lauf:
+datasets>=2.0          # Datensatz-Download von HuggingFace
+huggingface_hub>=0.20
+pyarrow>=12.0          # direktes Lesen der Parquet-Shards
+matplotlib>=3.5        # Ergebnis-Plots
+
+# Fuer die pretrained-CLIP-Baseline (genutzt, CPU-tauglich):
+onnxruntime>=1.16      # fuehrt die quantisierten ONNX-Encoder aus
+transformers>=4.40     # nur fuer den CLIP-Tokenizer
+
+# Alternative Baseline (nur falls torchvision zur torch-Version passt):
+# open_clip_torch>=2.20
